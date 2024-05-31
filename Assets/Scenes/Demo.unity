@@ -388,6 +388,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 80
   height: 45
+  roomMaxSize: 10
+  roomMinSize: 6
+  maxRooms: 30
   darkColor:
     serializedVersion: 2
     rgba: 0
@@ -398,6 +401,7 @@ MonoBehaviour:
   wallTile: {fileID: 11400000, guid: f7c3f1047b5ab1f4eace7f43e9741ac5, type: 2}
   floorMap: {fileID: 1375265186}
   obstacleMap: {fileID: 5473207}
+  rooms: []
 --- !u!1 &1312308578
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db76858d38718f4468b4ed52fd325d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.1
+  time: 0.05
   isPlayerTurn: 1
   entityNum: 0
   entities: []
