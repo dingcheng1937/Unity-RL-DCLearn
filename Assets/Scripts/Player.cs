@@ -33,7 +33,7 @@ public class Player : MonoBehaviour, Controls.IPlayerActions
       Action.EscapeAction();
   }
 
-  private void FixedUpdate() {
+  private void Update() {
     if (GameManager.instance.IsPlayerTurn && moveKeyHeld)
       MovePlayer();
   }

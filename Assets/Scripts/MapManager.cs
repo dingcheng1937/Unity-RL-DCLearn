@@ -41,8 +41,8 @@ public class MapManager : MonoBehaviour
 
         Instantiate(Resources.Load<GameObject>("NPC"), new Vector3(40 - 5.5f, 25 + 0.5f, 0), Quaternion.identity).name = "NPC";
 
-        Camera.main.transform.position = new Vector3(40, 20.25f, -10);
-        Camera.main.orthographicSize = 27;
+        // Camera.main.transform.position = new Vector3(40, 20.25f, -10);
+        // Camera.main.orthographicSize = 27;
     }
 
     public bool InBounds(int x, int y) => 0 <= x && x < width && 0 <= y && y < height;
